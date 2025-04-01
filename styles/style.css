@@ -1,0 +1,447 @@
+html,
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: -webkit-fill-available;
+    scroll-behavior: smooth;
+}
+
+.top {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    font-weight: 700;
+    font-size: 2.625rem;
+    padding: 0.12em;
+    background-color: rgba(221, 221, 221, 0.9);
+    align-items: center;
+}
+
+.banners {
+    color: white;
+    height: -webkit-fill-available;
+}
+
+.feature p {
+    color: rgb(110, 110, 110);
+}
+
+.icon {
+    color: grey;
+}
+
+.logo_text {
+    color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.red {
+    color: red;
+}
+
+.top div {
+    flex: 1;
+}
+
+.menu {
+    text-align: right;
+    cursor: pointer;
+}
+.menu i {
+    font-size: 1.7rem;
+    color: #000;
+    padding-right: 0.4em;
+}
+
+.banners div {
+    height: 100%;
+}
+
+.banners .banner {
+    display: none;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: difference;
+}
+
+.banners #banner1 {
+    display: block;
+    background-image: url('../images/image1.jpg');
+}
+
+.banners #banner2 {
+    background-image: url('../images/205956899-notebook-closeup-photo-css-javascript-and-html-usage-monitor-closeup-of-function-source-code.jpg');
+}
+
+.banners #banner3 {
+    background-image: url('../images/notebook-closeup-photo-css-javascript-and-html-usage-monitor-closeup-of-function-source-code-abstract-it-technology-background-2RFWAR4.jpg');
+}
+
+.banners #banner4 {
+    background-image: url('../images/91533145-real-code-developing-screen-programming-workflow-abstract-algorithm-concept-lines-of-code-visible.jpg');
+}
+
+.banner p{
+    padding: 0.1em;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5em;
+}
+
+.features .feature .icon,
+.features .feature .feature_title {
+    display: block;
+}
+
+.section_header {
+    margin: 0;
+    padding: 50px 0 10px;
+    text-align: center;
+    font-size: xxx-large;
+    cursor: default;
+}
+
+.feature_title {
+    font-size: x-large;
+}
+
+.features .feature {
+    flex-basis: 100%;
+    margin: 10px;
+    border-radius: 0.5rem;
+    padding: 8px;
+    background-color: rgb(236, 236, 236);
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.features .feature:hover {
+    background-color: rgb(212, 212, 212);
+    box-shadow: none;
+}
+
+.products .product {
+    position: relative;
+    overflow: hidden;
+    flex-basis: 100%;
+    width: 100px;
+    margin: 0.625em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.products .product img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.products .product:hover img {
+    transform: scale(1.2);
+}
+
+.products .product h3 {
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 2rem;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+}
+
+.features,
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+div.buttons {
+    height: unset;
+    position: absolute;
+    bottom: 4px;
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: center;
+}
+
+div.buttons .btn {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(252, 248, 248);
+    border-radius: 50%;
+    margin: 0 1%;
+    cursor: pointer;
+}
+
+div.buttons .btn.active,
+div.buttons .btn:hover {
+    background-color: rgb(128, 128, 128);
+}
+
+#testimonial1 {
+    display: flex;
+    background-image: url('../images/photo-1639149888905-fb39731f2e6c.jpeg');
+}
+
+#testimonial2 {
+    background-image: url('../images/premium_photo-1689551671541-31a345ce6ae0.jpeg');
+}
+
+#testimonial3 {
+    background-image: url('../images/photo-1568602471122-7832951cc4c5.jpeg');
+}
+
+#testimonial4 {
+    background-image: url('../images/premium_photo-1689539137236-b68e436248de.jpeg');
+}
+
+.testimonial .image {
+    display: none;
+    background-position: center;
+    background-size: cover;
+}
+
+.left,
+.right {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+    font-size: clamp(3rem, 6vw, 8rem);
+}
+
+.testi_intro,
+.testi_numbers {
+    font-size: x-large;
+    padding: 10px 50px;
+    display: block;
+    text-align: center;
+    margin: 0;
+}
+
+.testi_numbers {
+    color: yellow;
+    font-size: xx-large;
+}
+
+.left p,
+.right p {
+    margin: 0;
+}
+
+.testimonials .testimonial {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: lighten;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: -290px;
+    width: 250px;
+    bottom: 0;
+    padding: 4em 1.25em 0;
+    z-index: 9;
+    background-color: grey;
+    transition: right 0.3s ease-in-out;
+}
+
+.navbar.open {
+    right: 0;
+}
+
+.navbar small {
+    font-style: italic;
+    color: rgb(49, 49, 49);
+}
+
+.navbar a {
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 5px 2px;
+    font-size: x-large;
+    transition: 0.3s;
+    border-radius: 0.3rem;
+}
+
+.navbar a:hover {
+    background-color: rgb(59, 59, 59);
+    color: whitesmoke;
+}
+
+.testimonials {
+    background-color: rgb(32, 0, 54);
+    color: whitesmoke;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.testimonial .left .speaker,
+.testimonial .right .speaker {
+    font-size: medium;
+    font-style: italic;
+    display: block;
+}
+
+.testimonial .left,
+.testimonial .right {
+    color: black;
+}
+
+#testimonial1 .image {
+    background-image: url('../images/photo-1639149888905-fb39731f2e6c.jpeg');
+}
+
+#testimonial2 .image {
+    background-image: url('../images/premium_photo-1689551671541-31a345ce6ae0.jpeg');
+}
+
+#testimonial3 .image {
+    background-image: url('../images/photo-1568602471122-7832951cc4c5.jpeg');
+}
+
+#testimonial4 .image {
+    background-image: url('../images/premium_photo-1689539137236-b68e436248de.jpeg');
+}
+
+footer{
+    background: rgb(218, 218, 218);
+}
+
+.footer_header{
+    margin: 0;
+    padding: 0.3em 0;
+    text-align: center;
+    font-size: 2.625rem;
+    font-weight: 600;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.trust {
+    display: block;
+    font-size: x-large;
+    text-align: center;
+}
+
+.trustees {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.trustees img {
+    flex-basis: 15%;
+    width: 50px;
+}
+
+.contact .icon {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact .icon:hover {
+    color: rgb(75, 74, 74);
+}
+
+.testi_companies {
+    padding: 10px;
+}
+
+.menu a {
+    display: none;
+}
+
+@media only screen and (min-width: 850px) {
+    .features .feature {
+        flex-basis: 20%;
+    }
+
+    .menu a {
+        display: inline;
+        font-size: large;
+        color: black;
+        text-align: center;
+        padding: 5px 2px;
+        transition: 0.3s;
+        border-radius: 0.3rem;
+        text-decoration: none;
+    }
+
+    .menu a:hover {
+        background-color: rgb(170, 170, 170);
+        /* color: whitesmoke; */
+    }
+
+    .menu i {
+        display: none;
+    }
+
+    .products .product h3{
+        font-size: 1.5rem;
+    }
+
+    #testimonial2,
+    #testimonial4 {
+        flex-direction: row-reverse;
+    }
+
+    .testimonials .testimonial {
+        background-image: none !important;
+        background-color: unset;
+    }
+
+    .testimonial .image {
+        display: inline-block;
+        width: 35vw;
+        height: 35vw;
+        border-radius: 50%;
+        overflow: hidden
+    }
+
+    .testimonial .left,
+    .testimonial .right {
+        color: whitesmoke;
+    }
+
+    .products .product {
+        flex-basis: 30%;
+    }
+
+    .left,
+    .right {
+        width: 50%;
+    }
+
+    .left {
+        text-align: right;
+    }
+
+    .right {
+        float: right;
+        text-align: left;
+    }
+}
